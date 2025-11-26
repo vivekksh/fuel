@@ -1,3 +1,4 @@
+// src/core/domain/Route.ts
 export type Route = {
   id: string;
   vesselType: string;

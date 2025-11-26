@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { Route } from "../../core/domain/Route";
+// src/adapters/ui/RoutesTab.tsx
+// import { Route } from "../../core/domain/Route";
+import type { Route } from "../../core/domain/Route";
+
 
 const RoutesTab: React.FC = () => {
   const [routes, setRoutes] = useState<Route[]>([]);
