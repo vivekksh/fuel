@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "nodemon src/infrastructure/server/index.ts",
     "build": "tsc",
-    "start": "node dist/infrastructure/server/index.js"
+    "start": "node dist/infrastructure/server/index.js" ,
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "keywords": [],
   "author": "",
@@ -24,9 +26,14 @@
   },
   "devDependencies": {
     "@types/cors": "^2.8.19",
+    "@types/jest": "^30.0.0",
+    "@types/supertest": "^6.0.3",
     "eslint": "^9.39.1",
+    "jest": "^30.2.0",
     "nodemon": "^3.1.11",
     "prettier": "^3.6.2",
+    "supertest": "^7.1.4",
+    "ts-jest": "^29.4.5",
     "ts-node": "^10.9.2"
   }
 }
