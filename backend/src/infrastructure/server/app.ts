@@ -3,7 +3,7 @@ import cors from "cors";
 import routes from "../../adapters/inbound/http/routes";
 
 const app = express();
-app.use(cors()); // Enable CORS
+app.use(cors());
 app.use(express.json());
 app.use("/api", routes);
 
